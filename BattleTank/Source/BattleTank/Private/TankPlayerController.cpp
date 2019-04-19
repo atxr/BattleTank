@@ -23,3 +23,20 @@ void ATankPlayerController::BeginPlay()
 		UE_LOG(LogTemp, Warning, TEXT("%s is controlling %s"), *GetName(), *ControlledTank->GetName());
 	}
 }
+
+//Tick
+void ATankPlayerController::Tick(float DeltaSeconds)
+{
+	//Super
+	Super::Tick(DeltaSeconds);
+
+	AimTowardsCrosshair();
+}
+
+void ATankPlayerController::AimTowardsCrosshair()
+{
+	if (!GetControlledTank()) { return; }
+
+	//TODO PseudoCode here
+}
+
