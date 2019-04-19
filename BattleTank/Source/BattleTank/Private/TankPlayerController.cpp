@@ -37,6 +37,8 @@ void ATankPlayerController::AimTowardsCrosshair()
 {
 	if (!GetControlledTank()) { return; }
 
-	//TODO PseudoCode here
+	//Get the line trace towards crosshair
+	//If it meet the world
+		//Aim the intersection
 }
 

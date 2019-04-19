@@ -24,7 +24,8 @@ protected:
 
 	virtual void BeginPlay() override;
 
-	// TODO describe
+	// Get the position of the crosshair and start setting barrel and turret position 
+	// in order to hit the intersection of the world and the crosshair if it exist 
 	void AimTowardsCrosshair();
 	
 };
