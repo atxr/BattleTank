@@ -2,6 +2,9 @@
 
 #pragma once
 
+#include "Engine/World.h"
+#include "GameFramework/PlayerController.h"
+#include "Components/InputComponent.h"
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "Tank.generated.h"
@@ -25,5 +28,11 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+private:
+	void StartMoveForward();
+	void StopMoveForward();
+
+	bool bMoveForward;
 
 };
